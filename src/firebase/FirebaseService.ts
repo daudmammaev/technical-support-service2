@@ -7,7 +7,7 @@ export class FirebaseService {
     private readonly db: FirebaseFirestore.Firestore;
 
     constructor() {
-        const serviceAccount = require(process.env.DB_PORT);
+        const serviceAccount = require("C:/Users/daudm/OneDrive/Рабочий стол/work/technical-support-service2/service-account.json");
         admin.initializeApp({
             credential: admin.credential.cert(serviceAccount),
         });
